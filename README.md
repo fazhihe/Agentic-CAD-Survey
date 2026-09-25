@@ -1,6 +1,8 @@
-# Agentic CAD: A Survey
+<h1 align="center">Agentic CAD: A Survey</h1>
 
-**A survey of Agentic CAD, CAD agents, and foundation-model-driven CAD systems.**
+<p align="center">
+  A systematic survey of <b>modern Agentic CAD</b>, centered on state-dependent interaction between foundation-model agents and CAD/engineering environments.
+</p>
 
 <p align="center">
   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7524898">
@@ -9,8 +11,8 @@
   <a href="#citation">
     <img src="https://img.shields.io/badge/Citation-BibTeX-orange" alt="Citation">
   </a>
-  <a href="./pdf_中文翻译/">
-    <img src="https://img.shields.io/badge/Resources-Chinese%20Translations-red" alt="Chinese Translations">
+  <a href="./pdf_中文翻译.zip">
+    <img src="https://img.shields.io/badge/Chinese-Translations-red" alt="Chinese Translations">
   </a>
 </p>
 
@@ -18,63 +20,54 @@
 
 ## Overview
 
-Recent advances in large language models and multimodal foundation models are transforming computer-aided design (CAD) from one-shot generation toward increasingly **agentic** workflows.
+We define **modern Agentic CAD** as foundation-model-driven systems that make sequential CAD-related decisions conditioned on evolving user, model, geometric, or engineering states.
 
-This survey studies **Agentic CAD** as systems in which foundation models participate in iterative decision-making and interact with CAD environments through processes such as design intent understanding, planning, tool use, execution, observation, verification, and feedback.
-
-We organize the emerging literature around the **agent–CAD interaction loop**, CAD task categories, agent learning, and evaluation.
+The survey takes **state-dependent agent-CAD interaction** as the primary unit of analysis. It organizes the literature through a **workflow taxonomy**—specify, plan, act, observe, verify, and recover—and a complementary **task taxonomy** covering objectives across the CAD lifecycle. We further review model and interaction foundations, learning and experience accumulation, evaluation, and open research challenges.
 
 📄 **Paper:** [Agentic CAD: A Survey — SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7524898)
 
-<br>
-
 <p align="center">
-  <img src="./assets/1.png" width="95%" alt="Overview of Agentic CAD">
+  <img src="./assets/1.png" width="95%" alt="Conceptual overview of modern Agentic CAD">
 </p>
 
 <p align="center">
-  <em>Modern Agentic CAD: state-dependent interaction across the CAD lifecycle.</em>
+  <em>Figure 1. Conceptual overview of modern Agentic CAD and the two organizing views adopted in this survey.</em>
 </p>
 
 ---
 
-## Agent Learning
+## CAD Agent Learning
 
-A central question in Agentic CAD is how an agent learns from interaction with CAD environments.
-
-We examine learning paradigms at different levels of granularity, including **one-shot program-level learning**, **multi-turn program-level learning**, and **step-level CAD agent learning**, together with different strategies for reward design and credit assignment.
+We analyze CAD agent learning through three related dimensions: **action granularity**, **reward granularity**, and **credit-assignment granularity**, spanning one-shot program-level learning, multi-turn program-agent learning, and step-level CAD-agent learning.
 
 <p align="center">
-  <img src="./assets/2.png" width="95%" alt="Agent Learning in Agentic CAD">
+  <img src="./assets/2.png" width="95%" alt="Action, reward, and credit granularity in CAD agent learning">
 </p>
 
 <p align="center">
-  <em>Action, reward, and credit granularity in CAD agent learning.</em>
+  <em>Figure 2. Action, reward, and credit granularity in CAD agent learning.</em>
 </p>
 
 ---
 
 ## Evaluation
 
-Evaluating Agentic CAD requires more than measuring whether a final CAD model is geometrically correct.
-
-We discuss a multidimensional evaluation framework covering **CAD correctness**, **agent trajectories**, **reliability**, **resource cost**, and **evaluator validity**, enabling analysis of both final outcomes and the reasoning-and-action process that produces them.
+We extend evaluation beyond final-product quality to a multidimensional view covering **CAD correctness**, **agent trajectory**, **reliability**, and **resource cost**, while explicitly considering whether the evaluator is appropriate for the property being assessed.
 
 <p align="center">
-  <img src="./assets/3.png" width="95%" alt="Evaluation Framework for Agentic CAD">
+  <img src="./assets/3.png" width="95%" alt="Multidimensional evaluation framework for Agentic CAD">
 </p>
 
 <p align="center">
-  <em>A multidimensional evaluation framework for Agentic CAD.</em>
+  <em>Figure 3. A multidimensional evaluation framework for Agentic CAD.</em>
 </p>
 
 ---
 
 ## Resources
 
-- 📄 [**Survey Paper on SSRN**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7524898)
-- 🇨🇳 [**Chinese Translation Resources**](./pdf_中文翻译/)
-- 📁 Supplementary materials and figures are maintained in this repository.
+- 📄 [**Paper on SSRN**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7524898)
+- 🇨🇳 [**Chinese Translation Resources**](./pdf_中文翻译.zip)
 
 ---
 
@@ -86,10 +79,9 @@ If you find this survey or repository useful, please consider citing:
 @misc{zhang2026agenticcad,
   title        = {Agentic CAD: A Survey},
   author       = {Zhang, Xuecheng and He, Fazhi and Zhou, Xiaolu and Deng, Enxi
-                  and Qu, Guanlin and Wang, Haokun and Lin, Qingyuan
+                  and Qu, GuanLin and Wang, Haokun and Lin, Qingyuan
                   and Fan, Rubin and Lei, Yixiang and Wan, Ruibo},
   year         = {2026},
-  month        = sep,
   howpublished = {SSRN},
   url          = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7524898}
 }
@@ -99,6 +91,4 @@ If you find this survey or repository useful, please consider citing:
 
 ## Contributing
 
-Suggestions, corrections, and new papers related to **Agentic CAD** are welcome.
-
-Please feel free to open an issue or submit a pull request.
+Suggestions, corrections, and new papers related to **Agentic CAD** are welcome via issues or pull requests.
