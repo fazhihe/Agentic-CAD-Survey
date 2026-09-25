@@ -39,7 +39,7 @@ This survey reviews emerging research on **Agentic CAD**, with particular emphas
   <img src="./assets/2.png" width="900">
 </p>
 
-The survey organizes Agentic CAD research from complementary perspectives, including agent workflows, CAD environments, foundation models, and representative design tasks.
+
 
 ---
 
@@ -49,7 +49,7 @@ The survey organizes Agentic CAD research from complementary perspectives, inclu
   <img src="./assets/3.png" width="900">
 </p>
 
-We review representative Agentic CAD systems and organize existing research according to their workflow and application characteristics.
+
 
 ---
 
